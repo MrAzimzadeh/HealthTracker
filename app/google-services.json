@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "664417223762",
+    "project_id": "healthtest-396410",
+    "storage_bucket": "healthtest-396410.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664417223762:android:955f1cd435b799c6320b8b",
+        "android_client_info": {
+          "package_name": "com.azimzada.healthapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "664417223762-aa95konj34fpbhhbnfbb7gh8ghp9se6t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.azimzada.healthapp",
+            "certificate_hash": "16c0c5e2bb5ed92b88db8f02dda82da23d66e28b"
+          }
+        },
+        {
+          "client_id": "664417223762-ie6pmca2d04q0ddvde1lpsr86eaj3d3p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_NiQ_iPqZwOgnkYEWIoiExwHLCFz-R-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "664417223762-3lkspv3ojopibhrjuek1thajbs5r06kh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,82 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id("com.google.gms.google-services")
+    id 'com.google.firebase.crashlytics'
+    id 'kotlin-kapt'
+}
+
+android {
+    namespace 'com.azimzada.healthapp'
+    compileSdkVersion 34
+    buildFeatures {
+        viewBinding true
+    }
+    defaultConfig {
+        applicationId "com.azimzada.healthapp"
+        minSdkVersion 24
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["room.schemaLocation": "$projectDir/schemas".toString()]
+            }
+        }
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+
+    implementation "androidx.room:room-runtime:2.5.2"
+    implementation 'androidx.work:work-runtime-ktx:2.8.1'
+    implementation 'androidx.test.ext:junit-ktx:1.1.5'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.7.1'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.7.1'
+    annotationProcessor "androidx.room:room-compiler:2.5.2"
+    kapt("androidx.room:room-compiler:2.5.2")
+    implementation 'com.squareup.picasso:picasso:2.8'
+
+    // Google Play Services Base
+    implementation 'com.google.firebase:firebase-auth:22.1.1'
+    implementation 'com.google.android.gms:play-services-auth:20.6.0'
+    implementation 'com.google.android.gms:play-services-fitness:21.1.0'
+
+    implementation 'androidx.core:core-ktx:1.10.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-auth-ktx:22.1.1'
+    implementation 'com.google.firebase:firebase-crashlytics:18.4.0'
+    implementation 'com.google.firebase:firebase-analytics:21.3.0'
+    implementation 'androidx.compose.ui:ui-graphics-android:1.5.0'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
+
+apply plugin: 'com.google.gms.google-services'

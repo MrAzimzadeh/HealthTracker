@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.Picker" parent="Theme.AppCompat.Light.NoActionBar" >
+    <item name="android:textColorPrimary">@android:color/white</item>
+</style>
+    <style name="DefaultNumberPickerTheme" parent="AppTheme.Picker">
+        <item name="colorControlNormal">#FF9800</item>
+    </style>
+
+
+</resources>
